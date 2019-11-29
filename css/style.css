@@ -43,6 +43,7 @@ header {
     padding: 0px;
     position: relative;
     display: block;
+    
 }
 
 .page-header {
@@ -53,6 +54,9 @@ header {
     opacity: 90%;
     width: 100%;
     z-index: 1;
+    top: 0;
+    margin-top: 10px;
+    left: 0;
 }
 
 .header-title {
@@ -83,7 +87,10 @@ header {
     opacity: 90%;
     width: 100%;
     z-index: 1;
-    margin-top: 58px;
+    top: 0;
+    margin-top: 65px;
+    left: 0;
+    
 }
 
 nav ul {
@@ -105,7 +112,7 @@ a:hover {
 }
 
 p {
-    color: rgb(255, 255, 0);
+    color: var(--main-color, yellow);
     text-align: justify;
     line-height:35px;
     font-size: 17px;
@@ -117,45 +124,40 @@ p {
     
 }
 
-.div2 {
+.space-div {
+    display: block;
+    position: relative;
+    margin: auto;
     margin: 100px;
+    margin-top: 70px;
+    padding: 10px 75px 10px 75px;
+    width: 60%;
+}
+
+.card {
+    display: block;
+    position: relative;
+    margin: auto;
+    margin-top: 40px;
+    padding: 10px 75px 10px 75px;
+    width: 60%;
+    background-color:rgba(56, 56, 56, 0.503);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgb(255, 255, 255), 0 6px 6px rgb(255,255,255);
 }
 
 #img-div {
-    display: block;
-    background-color:rgba(56, 56, 56, 0.503);
-    margin: auto;
-    width: 60%;
-    position: relative;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px 75px 10px 75px;
-    margin-top: 40px;
-    box-shadow: 0 5px 5px rgb(255, 255, 255), 0 6px 6px rgb(255,255,255);
-}
-
-#tribute-info {
-    
-    background-color:rgba(56, 56, 56, 0.503);
-    margin: auto;
-    width: 70%;
-    position: relative;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-top: 30px;
-    padding: 7px;
-    box-shadow: 0 5px 5px rgb(255, 255, 255), 0 6px 6px rgb(255,255,255);
 }
 
 #image {
     display: block;
     min-width: 100%;
     max-width: 100%;
-    
 }
 
 #img-caption {
-    color: yellow;
+    color: var(--main-color, yellow);
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 18px;
     text-transform: capitalize;
@@ -163,11 +165,13 @@ p {
     text-align: center;
     margin: 0px;
     padding: 10px;
+}
+
+#tribute-info {
+
 }
 
 .textStyle {
-    
-    font-family: 'Roboto Condensed', sans-serif;
     font-size: 18px;
     text-transform: capitalize;
     letter-spacing: 4px;
@@ -176,11 +180,23 @@ p {
     padding: 10px;
 }
 
-.header-space {
-    background-color: blue;
-    margin: 120px;
+.link-info {
+    color: var(--main-color, yellow);
+    text-decoration: underline;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 4px;
 }
 
-.aclass {
-    color:var(--sub-color3, white);
+.foot {
+    color: var(--sub-color1, black);
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 4px;
+
+    background-color: var(--main-color, yellow);
+    border: 2px solid var(--sub-color1, black);
+    position: relative;
+    width: 100%;
+    height: auto;
+    opacity: 90%;
+    text-align: center;
 }
